@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>My Family & Friends</title>
+  <meta name="author" content="Mellysa Syaqiera binti Haikal" />
+  <meta name="description" content="This page is about my family and closest friends." />
+  <style type="text/css">
+    body {
+      font-family: 'Garamond', Tahoma, sans-serif;
+      background-color: #ffeef5;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    #container {
+      max-width: 1500px;
+      margin: auto;
+      background-color: #fff0f6;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+    }
+
+    #header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ffb6c1;
+    }
+
+    #nav {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      background-color: #ffb6c1;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    #nav a:hover {
+      background-color: #ff99b8;
+    }
+
+    #content {
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      color: #d35d6e;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .photo-item {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      aspect-ratio: 1/1;
+      transition: all 0.5s ease;
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .photo-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(255, 105, 180, 0.4);
+    }
+
+    .photo-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(211, 93, 110, 0.8);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      font-size: 0.9em;
+    }
+
+    .photo-item:hover .photo-caption {
+      transform: translateY(0);
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      color: #d35d6e;
+      border-bottom: 2px solid #ffb6c1;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+
+    #footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 15px;
+      color: white;
+      font-size: 0.9em;
+      border-top: 2px solid #ffb6c1;
+      margin-top: 30px;
+    }
+
+    .heart {
+      color: #ff6b8b;
+      animation: heartbeat 1.5s infinite;
+      display: inline-block;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="images/header.png" alt="My Banner" width="1200" height="150" />
+    </div>
+
+    <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="background.html">Background</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family & Friends</a>
+      <a href="interests.html">Interests</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="hometown.html">Hometown</a>
+    </div>
+
+    <div id="content">
+      <h1>My Family & Friends <span class="heart">💖</span></h1>
+
+      <div class="section">
+        <h2 class="section-title">My Family</h2>
+        <p>The people who love me unconditionally and make my house a home.</p>
+        
+        <div class="photo-gallery">
+          <!-- Family Photos 1-6 -->
+          <div class="photo-item">
+            <img src="images/reunion.jpg" alt="Family reunion">
+            <div class="photo-caption">Family Reunion</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/parents.jpg" alt="Parents">
+            <div class="photo-caption">Parents</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/sibs.jpg" alt="Siblings">
+            <div class="photo-caption">Siblings</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/celebration.jpg" alt="Celebration">
+            <div class="photo-caption">Celebration</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/holiday.jpg" alt="Holiday">
+            <div class="photo-caption">Holiday</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/fam.jpg" alt="Together">
+            <div class="photo-caption">Together</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">My Friends</h2>
+        <p>My chosen family who make every day an adventure.</p>
+        
+        <div class="photo-gallery">
+          <!-- Friends Photos 1-6 -->
+          <div class="photo-item">
+            <img src="images/bestie.jpg" alt="Best friends">
+            <div class="photo-caption">Best Friends</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/hangout.jpg" alt="Hangout">
+            <div class="photo-caption">Hangout</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/adventure.jpg" alt="Adventures">
+            <div class="photo-caption">Adventures</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/memories.jpg" alt="Memories">
+            <div class="photo-caption">Memories</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/travel.jpg" alt="Travel">
+            <div class="photo-caption">Travel</div>
+          </div>
+          <div class="photo-item">
+            <img src="images/memory.jpg" alt="Fun times">
+            <div class="photo-caption">Fun Times</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align: center; font-size: 1.3em; margin: 40px 0; color: #d35d6e;">
+        <span class="heart">💕</span>Having a loving family and friends is the biggest blessing ever <span class="heart">💕</span>
+      </p>
+    </div>
+
+    <div id="footer">
+      <p>&copy; 2025 Mellysa Syaqiera binti Haikal | Best viewed on Chrome | Last updated: May 13, 2025</p>
+    </div>
+  </div>
+</body>
+</html>

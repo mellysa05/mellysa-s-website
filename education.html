@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>My Education</title>
+  <meta name="author" content="Mellysa Syaqiera binti Haikal" />
+  <meta name="description" content="My education background." />
+
+  <style type="text/css">
+    body {
+      font-family: 'Garamond', Tahoma, sans-serif;
+      background-color: #ffeef5;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    #container {
+      max-width: 1500px;
+      margin: auto;
+      background-color: #fff0f6;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+    }
+
+    #header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ffb6c1;
+    }
+
+    #nav {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      background-color: #ffb6c1;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    #nav a:hover {
+      background-color: #ff99b8;
+    }
+
+    #content {
+      padding: 20px;
+      color: #333;
+    }
+
+    #footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 0.9em;
+      border-top: 2px solid #ffb6c1;
+    }
+    
+    /* New styles for enhancements */
+    .education-stage {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .education-stage:hover {
+      transform: translateY(-5px);
+    }
+    
+    .school-info {
+      flex: 2;
+      padding-right: 20px;
+    }
+    
+    .school-image {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .school-image img {
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 10px;
+      border: 3px solid #ffb6c1;
+    }
+    
+    .achievements {
+      background-color: #fff9fb;
+      border-left: 4px solid #ffb6c1;
+      padding: 15px;
+      margin-top: 15px;
+    }
+    
+    .timeline {
+      position: relative;
+      margin: 30px 0;
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #ffb6c1;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+    }
+    
+    .year-marker {
+      position: relative;
+      padding-left: 50px;
+      margin-bottom: 30px;
+    }
+    
+    .year-marker::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 12px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+      border: 4px solid #ffb6c1;
+   
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="images/header.png" alt="My Banner" width="1200" height="150" />
+    </div>
+
+    <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="background.html">Background</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family & Friends</a>
+      <a href="interests.html">Interests</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="hometown.html">Hometown</a>
+    </div>
+
+    <div id="content">
+      <h1 style="text-align: center; color: #ff69b4;">My Education Journey</h1>
+      
+     
+      <p style="text-align: center;">Education has always been an important part of my life and growth. Here's my academic journey through the years:</p>
+      
+      <div class="timeline">
+        <div class="year-marker">
+          <h3>2012 - 2017</h3>
+        </div>
+      </div>
+      
+      <div class="education-stage">
+        <div class="school-info">
+          <h2>SK Dato Onn Jaafar</h2>
+          <p>My school journey begans and I found passion in learning and found friendships that have lasted until now. Some highlights:</p>
+          <div class="achievements">
+            <p>📚 School librarian assistant for 3 years</p>
+            <p>🏆 Won 2nd place in choral speaking</p>
+            <p>🎨 Active in curriculum especially in Puteri Islam </p>
+          </div>
+        </div>
+        <div class="school-image">
+          <img src="images/doj.png" alt="SK Dato Onn Jaafar logo">
+        </div>
+      </div>
+      
+      <div class="timeline">
+        <div class="year-marker">
+          <h3>2018 - 2023</h3>
+        </div>
+      </div>
+      
+      <div class="education-stage">
+        <div class="school-info">
+          <h2>SMK USJ 13</h2>
+          <p>Where I grew both academically and personally. Memorable experiences:</p>
+          <div class="achievements">
+            <p>🏀 Joined netball for school's sports day </p>
+            <p>🗣 Participated in public speaking</p>
+            <p>🎨 Become committee member for Art Club</p>
+          </div>
+        </div>
+        <div class="school-image">
+          <img src="images/13.png" alt="SMK USJ 13 logo">
+        </div>
+      </div>
+      
+      <div class="timeline">
+        <div class="year-marker">
+          <h3>2023 - Present</h3>
+        </div>
+      </div>
+      
+      <div class="education-stage">
+        <div class="school-info">
+          <h2>Universiti Teknologi MARA (UiTM)</h2>
+          <p>Diploma in Library Informatics</p>
+          <p>At UiTM, I'm learning valuable skills in information management, web content development, digital archiving, and more. Some exciting aspects of my current studies:</p>
+          <div class="achievements">
+            <p>🌐 Learning web development and database management</p>
+            <p>📊 Digital preservation and information organization</p>
+            <p>🤖 Exploring emerging technologies in library science</p>
+          </div>
+        </div>
+        <div class="school-image">
+          <img src="images/uitmlogo.png" alt="UiTM logo" style="background-color: #fff; padding: 10px;">
+        </div>
+      </div>
+      
+     
+    <div id="footer">
+      <p>&copy; 2025 Mellysa Syaqiera Binti Haikal | Best viewed on Chrome | Last updated: May 10, 2025</p>
+    </div>
+  </div>
+</body>
+</html>

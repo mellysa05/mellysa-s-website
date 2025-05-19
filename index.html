@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>My Website</title>
+  <meta name="author" content="Mellysa Syaqiera binti Haikal" />
+  <meta name="description" content="My personal website for IML254" />
+  <style type="text/css">
+    body {
+      font-family: 'Garamond', Tahoma, sans-serif;
+      background-color: #ffeef5;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    #container {
+      max-width: 1500px;
+      margin: auto;
+      background-color: #fff0f6;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+    }
+
+    #header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ffb6c1;
+    }
+
+    #nav {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      background-color: #ffb6c1;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    #nav a:hover {
+      background-color: #ff99b8;
+      transform: scale(1.05);
+    }
+
+    #content {
+      padding: 40px;
+      color: #333;
+      text-align: center;
+      min-height: 300px;
+      background: url('images/light-pink-pattern.png') no-repeat center center/cover;
+    }
+
+    .welcome-message {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+      border: 1px solid #ffb6c1;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    /* Typing effect styles - ONLY THESE LINES WERE MODIFIED */
+    .typing-container {
+      display: inline-block;
+      font-size: 1.2em; 
+      color: #ff69b4; /* Bright pink color */
+    }
+
+    .typing-text {
+      border-right: 2px solid #d85a7f;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .typing-cursor {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    #footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 15px;
+      color: white;
+      font-size: 0.9em;
+      border-top: 2px solid #ffb6c1;
+      border-radius: 0 0 15px 15px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="images/header.png" alt="My Banner" width="1200" height="150" />
+    </div>
+
+    <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="background.html">Background</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family & Friends</a>
+      <a href="interests.html">Interests</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="hometown.html">Hometown</a>
+    </div>
+
+    <div id="content">
+      <div class="welcome-message">    
+        <h1>
+          <div class="typing-container">
+            <span id="typing-text" class="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+        </h1>      
+        <p>Hello! I'm Mellysa Syaqiera, and this is my personal website created for my individual assignment for IML254 subject.</p>
+        <p>Here you'll discover more about my background, education, family and friends, interest, gallery and also my hometown.</p>
+        <p>Feel free to explore the different sections using the navigation menu above. I hope you enjoy getting to know me through this website!</p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>&copy; 2025 Mellysa Syaqiera binti Haikal | Best viewed in Chrome | Last updated: May 10, 2025</p>
+    </div>
+  </div>
+
+  <script>
+    // Typing effect script
+    function initTypingEffect() {
+      const text = "Welcome to my website💖!";
+      const typingText = document.getElementById("typing-text");
+      let i = 0;
+      
+      function typeWriter() {
+        if (i < text.length) {
+          typingText.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100); // Typing speed (milliseconds)
+        } else {
+          // Remove cursor after typing completes
+          document.querySelector(".typing-cursor").style.display = "none";
+        }
+      }
+      
+      // Start typing effect
+      setTimeout(typeWriter, 500); // Small delay before starting
+    }
+
+    // Start when page loads
+    window.addEventListener('DOMContentLoaded', initTypingEffect);
+  </script>
+</body>
+</html>

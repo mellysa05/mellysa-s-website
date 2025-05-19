@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>My Gallery</title>
+  <meta name="author" content="Mellysa Syaqiera binti Haikal" />
+  <meta name="description" content="Photo gallery of my memories and favorite moments." />
+
+  <style type="text/css">
+    body {
+      font-family: 'Garamond', Tahoma, sans-serif;
+      background-color: #ffeef5;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    #container {
+      max-width: 1500px;
+      margin: auto;
+      background-color: #fff0f6;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+    }
+
+    #header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ffb6c1;
+    }
+
+    #nav {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 12px;
+      background-color: #ffb6c1;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    #nav a:hover {
+      background-color: #ff99b8;
+    }
+
+    #content {
+      padding: 30px;
+      color: #333;
+    }
+
+    /* ----- GALLERY STYLES (CLEAN & SUBTLE) ----- */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    .gallery-item {
+      width: 450px; /* Wider images */
+      height: 300px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 85%; /* Space for caption */
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    /* Polaroid caption */
+    .gallery-caption {
+      padding: 10px;
+      text-align: center;
+      font-family: 'Garamond', cursive;
+      color: #ff69b4;
+      background: white;
+      border-top: 1px solid #ffb6c1;
+    }
+
+    /* Hover effect (subtle) */
+    .gallery-item:hover {
+      box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Gallery title */
+    #content h1 {
+      color: #ff69b4;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    #content p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    #footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 0.9em;
+      border-top: 2px solid #ffb6c1;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="images/header.png" alt="My Banner" width="1200" height="150" />
+    </div>
+
+    <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="background.html">Background</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family & Friends</a>
+      <a href="interests.html">Interests</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="hometown.html">Hometown</a>
+    </div>
+
+    <div id="content">
+      <h1>📸 My Photo Diary</h1>
+      <p>A collection of my favorite moments ✨</p>
+
+      <div class="gallery">
+        <!-- Row 1 -->
+        <div class="gallery-item">
+          <img src="images/f1.jpg" alt="Raya 2025" />
+          <div class="gallery-caption">Raya 2025</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/f2.jpg" alt="Friends" />
+          <div class="gallery-caption">Friends</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/f3.jpg" alt="Hangout" />
+          <div class="gallery-caption">Hangout</div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gallery-item">
+          <img src="images/f4.jpg" alt="Friends Trip" />
+          <div class="gallery-caption">UiTM Friends</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/f5.jpg" alt="Raya Photoshoot" />
+          <div class="gallery-caption">Raya Photoshoot</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/d.jpg" alt="Coffee Date" />
+          <div class="gallery-caption">Weekend Café</div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gallery-item">
+          <img src="images/f.jpg" alt="Sunset" />
+          <div class="gallery-caption">Sunset</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/e.jpg" alt="Pet Photo" />
+          <div class="gallery-caption">Cat</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/beach.jpg" alt="Beach" />
+          <div class="gallery-caption">Singkir Beach</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>&copy; 2025 Mellysa Syaqiera binti Haikal | Best viewed on Chrome | Last updated: May 13, 2025</p>
+    </div>
+  </div>
+</body>
+</html>
